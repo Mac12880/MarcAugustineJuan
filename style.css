@@ -22,7 +22,7 @@ a.menuButton{
 }
 
 .nav{
-    width: 99%;
+    width: 100%;
     overflow: auto;
     background-color: #333;
     padding: 10;
@@ -38,6 +38,49 @@ ul{
   list-style-type: none;  
   padding: 0px 0px;
   margin: 0px 0px;
+}
+
+.connect{
+    border-radius: 25px 50px;
+    border-style: solid;
+    background: rgb(107,101,214);
+    background: linear-gradient(90deg, rgba(107,101,214,1) 0%, rgba(90,37,244,1) 50%, rgba(159,0,255,1) 100%);
+    border-color: white;
+    width:auto;
+}
+.connectGrid{
+    display:grid;
+    grid-template-columns: 5px auto 5px;
+    grid-template-rows: 50px 50px 80px;
+    place-items: center;
+    padding: 0px 0px;
+    column-gap: 0px;
+    row-gap: 0px;
+}
+.connect b{
+    color: white;
+    font-size: 20px;
+}
+.connect input{
+    border-color: white;
+    border-style: solid;
+    border-radius: 25px;
+    padding: 10px 10px;
+}
+.connectGrid--message{
+    height: auto;
+    width: 380px;
+    border-radius: 5px;
+}
+/* .connect ul{
+    text-align: center;
+}
+.connect li{
+    padding: 10px;
+} */
+
+article{
+    width: clamp(200px, 50%, 600px)
 }
 
 @media scren and (max-width: 500px){
