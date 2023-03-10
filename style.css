@@ -28,7 +28,6 @@ a.menuButton{
     font-size: 10px;
 }
 a.menuButton:hover {
-    font-weight: bold;
     background: rgb(107,101,214);
     background: linear-gradient(90deg, rgba(107,101,214,1) 0%, rgba(90,37,244,1) 50%, rgba(159,0,255,1) 100%);
 }
@@ -51,6 +50,24 @@ ul{
 .nav table{
     background-color: white;
 }
+
+/* Intro */
+.introGrid{
+    font-family: Verdana,Geneva,sans-serif;
+    color: white;
+    display:grid;
+    grid-template-columns: 300px 200px;
+    grid-template-rows: 50px;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.intro p{
+    font-size: 10px;
+}
+
 /* Get in Touch */
 .connect{
     border-radius: 25px 50px;
@@ -58,13 +75,15 @@ ul{
     background: rgb(107,101,214);
     background: linear-gradient(90deg, rgba(107,101,214,1) 0%, rgba(90,37,244,1) 50%, rgba(159,0,255,1) 100%);
     border-color: white;
-    width:auto;
+    width: clamp(410px, 90%, 1000px);
     font-family: Verdana,Geneva,sans-serif;
+    margin-left: auto;
+    margin-right: auto;
 }
 .connectGrid{
     display:grid;
     grid-template-columns: 5px auto 5px;
-    grid-template-rows: 50px 50px 80px;
+    grid-template-rows: 50px 50px 85px;
     place-items: center;
     padding: 0px 0px;
     column-gap: 0px;
@@ -83,11 +102,29 @@ ul{
 }
 .connectGrid--message{
     height: auto;
-    width: 375px;
+    width: 370px;
     border-color: lightgrey;
     border-style: solid;
     border-radius: 5px;
     border-width: initial;
+}
+.connectGrid button{
+    font-size: 17px;
+    font-weight: 700;
+    padding: 0.5em 1em; 
+    color: #04AA6D;
+    background-color: #9cfcd9;
+    border: 3px solid #04AA6D;
+    border-radius: 5px;
+}
+.connectGrid button:hover{
+    font-size: 17px;
+    font-weight: 700;
+    padding: 0.5em 1em; 
+    color: white;
+    background-color: #04AA6D;
+    border: 3px solid #04AA6D;
+    border-radius: 5px;
 }
 
 /* Responsive */
@@ -95,7 +132,7 @@ article{
     width: clamp(200px, 50%, 600px)
 }
 
-@media scren and (max-width: 500px){
+@media screen and (max-width: 500px){
     .nav a{
         float: none;
         display: block;
