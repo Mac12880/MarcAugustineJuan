@@ -96,19 +96,22 @@ header{
     background: rgb(107,101,214);
     background: linear-gradient(90deg, rgba(107,101,214,1) 0%, rgba(90,37,244,1) 50%, rgba(159,0,255,1) 100%);
     border-color: white;
-    width: clamp(410px, 90%, 1000px);
+    width: clamp(410px, 60%, 1000px);
     font-family: Verdana,Geneva,sans-serif;
     margin-left: auto;
     margin-right: auto;
 }
 .connectGrid{
     display:grid;
-    grid-template-columns: 5px auto 5px;
+    gap: 1rem;
+    grid-template-columns: repeat(autofit, minmax(min(22rem, 100%)));
+    place-items: center;
+    /* grid-template-columns: 5px auto 5px;
     grid-template-rows: 50px 50px auto;
     place-items: center;
     padding: 0px 0px;
     column-gap: 0px;
-    row-gap: 0px;
+    row-gap: 0px; */
 }
 .connect b{
     color: white;
