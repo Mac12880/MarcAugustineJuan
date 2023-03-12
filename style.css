@@ -73,19 +73,30 @@ header{
 }
 
 /* Intro */
-.introGrid{
+.intro{
+    border-radius: 25px 50px;
+    position: static;
     font-family: Verdana,Geneva,sans-serif;
-    color: white;
-    display:grid;
-    grid-template-columns: 300px 200px;
-    grid-template-rows: 50px;
-    text-align: justify;
-    text-justify: inter-word;
+    
     margin-left: auto;
     margin-right: auto;
+    height: auto;
     
 }
-.intro p{
+.introGrid{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(autofit, minmax(min(22rem, 60%)));
+    place-items: center;
+    color: white;
+    border-radius: 15px;
+    background-color: black;
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+}
+.introGrid p{
+    width: clamp(410px, 60%, 1000px);
     font-size: 10px;
 }
 
@@ -102,7 +113,7 @@ header{
     margin-right: auto;
 }
 .connectGrid{
-    display:grid;
+    display: grid;
     gap: 1rem;
     grid-template-columns: repeat(autofit, minmax(min(22rem, 100%)));
     place-items: center;
