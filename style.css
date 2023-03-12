@@ -7,7 +7,7 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #24252a;
+    /* background-color: #24252a; */
 }
 .logo{
     color: white;
@@ -28,7 +28,48 @@ header{
     padding: 30px 10%;
 }
 .navLinks{
+    font-weight: bold;
     list-style: none;
+}
+.navLinks li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.navLinks ul li a{
+    position: relative;
+    transition: all 0.3 ease 0s;
+}
+.navLinks ul li a::after{
+    transition: all .5s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: rgba(159,0,255,1);
+    height: 1px;
+}
+.navLinks ul li a:hover{
+    color: rgba(159,0,255,1);
+}
+.navLinks ul li a:hover:after {
+    width: 100%;
+}
+
+.cta button{
+    font-weight: bold;
+    padding: 9px 25px;
+    background-color: rgba(159,0,255,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+.cta button:hover{
+    background-color: black;
 }
 
 /* Intro */
