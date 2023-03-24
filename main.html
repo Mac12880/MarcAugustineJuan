@@ -10,30 +10,54 @@
 </head>
 
 <body>
-    <div class="navBar">
+    
         <header>
-            <b class="logo">M1.</b>
-            <nav class="navLinks">
+            <div class="navBar">
+                <b class="logo">M1.</b>
+                <nav class="navLinks">
                 <ul>
                     <li><a href="#">Skills</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">About</a></li>
+                        
+                    </nav>
+                    <a class="cta" href="#connect"><button>Contact</button></a>
+                    <div class="toggle_btn">
+                        <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                    </div>
                 </ul>
-            </nav>
-            <a class="cta" href="#connect"><button>Contact</button></a>
+            </div>
+
+            <div class="dropdownnavBar">
+                <nav class="navLinks">
+                    <ul>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">About</a></li>
+                        <li>
+                            <a class="cta" href="#connect"><button>Contact</button></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-    </div>
-    <!-- <div class="nav">
-        <ul>
-            <img src="">
-            <a class="menuButton" href="#connect">Lets Connect</a>
-        </ul>
-    </div>
-    <a class="menuIcon" href="">Email</a>
-    <a class="menuIcon" href="https://github.com/Mac12880">Github</a>
-    <a class="menuIcon" href="https://www.linkedin.com/in/marc-augustine-juan-b00b03237/">Linkedin</a>
-    <a class="menuIcon" href="https://www.facebook.com/marc.juan6/">Facebook</a> -->
-    <br>
+        <script>
+            const toggleBtn = document.querySelector(".toggle_btn");
+            const toggleBtnIcon = document.querySelector(".toggle_btn i");
+            const dropDownMenu = document.querySelector(".dropdownnavBar");
+
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle("open")
+                const isOpen = dropDownMenu.classList.contains('open');
+
+                if(toggleBtnIcon.classList == isOpen){
+                    toggleBtnIcon.classList = 'fa-solid fa-xmark';
+                }
+                else{
+                    toggleBtnIcon.classList = 'fa-solid fa-bars';
+                }
+            }
+        </script>
     <br>
     <section class="intro">
         <div class="introGrid">
@@ -44,12 +68,15 @@
             </i>
             <i>
                 <img src="images/Marc.png">
-                <div class="socialLinks">
-                    <a href="#connect" class="gmaillink"><i class="fa-solid fa-envelope gmaillink"></i></a>
-                    <a href="https://github.com/Mac12880" class="githublink"><i class="fa-brands fa-github githublink"></i></a>
-                    <a href="https://www.linkedin.com/in/marc-augustine-juan-b00b03237/" class="linkedinlink"><i class="fa-brands fa-linkedin linkedinlink"></i></a>
-                    <a href="https://www.facebook.com/marc.juan6/" class="fblink"><i class="fa-brands fa-facebook fblink"></i></a>
-                </div>
+                <fieldset class="socialLinks">
+                    <legend>Socials</legend>
+                    <div >
+                        <a href="#connect" class="gmaillink"><i class="fa-solid fa-envelope gmaillink"></i></a>
+                        <a href="https://github.com/Mac12880" class="githublink"><i class="fa-brands fa-github githublink"></i></a>
+                        <a href="https://www.linkedin.com/in/marc-augustine-juan-b00b03237/" class="linkedinlink"><i class="fa-brands fa-linkedin linkedinlink"></i></a>
+                        <a href="https://www.facebook.com/marc.juan6/" class="fblink"><i class="fa-brands fa-facebook fblink"></i></a>
+                    </div>
+                </fieldset>
             </i>
             
             
@@ -60,11 +87,8 @@
         <div class="introGrid">
             
             <i>
-                <h1>Hi, I'm Marc</h1>
-                <p>Looking for an internship opportunity in software development as a full-stack developer, where I can apply my theoretical knowledge to real-world projects, enhance my technical skills, and gain valuable experience working in a collaborative team environment</p>
             </i>
             <i>
-                <img src="images/Marc.png">
             </i>
         </div>
     </section>
@@ -99,6 +123,8 @@
             <!-- <br> -->
         </fieldset>
     </section>
+
+    <script src="main.js"></script>
 </body>
 
 <footer>
