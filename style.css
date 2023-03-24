@@ -86,7 +86,7 @@ header{
 .introGrid{
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(autofit, minmax(min(22rem, 60%)));
+    /* grid-template-columns: repeat(autofit, minmax(min(22rem, 60%))); */
     place-items: center;
     color: white;
     border-radius: 15px;
@@ -96,12 +96,59 @@ header{
     width: clamp(410px, 60%, 1000px);
     margin-left: auto;
     margin-right: auto;
-    padding: 10px 10px 10px 10px;
+    padding: 20px;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+    place-items: center;
 }
 .introGrid p{
     font-size: 10px;
 }
-
+.introGrid img{
+    width: 150px;
+    height: 150px;
+    object-fit: fill;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Links */
+.socialLinks a{
+    background-color: #5A5A5A;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.gmaillink i{
+    color: #ffffff;
+    cursor: pointer;
+}
+.gmaillink i:hover{
+    color: 	#c71610;
+    cursor: pointer;
+}
+.githublink i{
+    color: #ffffff;
+    cursor: pointer;
+}
+.githublink i:hover{
+    color: #6e5494;
+    cursor: pointer;
+}
+.linkedinlink i{
+    color: #ffffff;
+    cursor: pointer;
+}
+.linkedinlink i:hover{
+    color: #0077B5;
+    cursor: pointer;
+}
+.fblink i{
+    color: #ffffff;
+    cursor: pointer;
+}
+.fblink i:hover{
+    color: #4267B2;
+    cursor: pointer;
+}
 /* Get in Touch */
 .connect{
     border-radius: 25px 50px;
