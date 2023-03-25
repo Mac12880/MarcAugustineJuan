@@ -23,41 +23,24 @@
                     </nav>
                     <a class="cta" href="#connect"><button>Contact</button></a>
                     <div class="toggle_btn">
-                        <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                        <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
                     </div>
                 </ul>
             </div>
 
-            <div class="dropdownnavBar">
+            <div class="dropdownnavBar open" id="dropdownnavBar">
                 <nav class="navLinks">
                     <ul>
                         <li><a href="#">Skills</a></li>
                         <li><a href="#">Projects</a></li>
                         <li><a href="#">About</a></li>
                         <li>
-                            <a class="cta" href="#connect"><button>Contact</button></a>
+                            <a href="#connect">Connect</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <script>
-            const toggleBtn = document.querySelector(".toggle_btn");
-            const toggleBtnIcon = document.querySelector(".toggle_btn i");
-            const dropDownMenu = document.querySelector(".dropdownnavBar");
-
-            toggleBtn.onclick = function () {
-                dropDownMenu.classList.toggle("open")
-                const isOpen = dropDownMenu.classList.contains('open');
-
-                if(toggleBtnIcon.classList == isOpen){
-                    toggleBtnIcon.classList = 'fa-solid fa-xmark';
-                }
-                else{
-                    toggleBtnIcon.classList = 'fa-solid fa-bars';
-                }
-            }
-        </script>
     <br>
     <section class="intro">
         <div class="introGrid">
