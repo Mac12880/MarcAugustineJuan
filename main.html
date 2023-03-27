@@ -17,7 +17,7 @@
                 <nav class="navLinks">
                 <ul>
                     <li><a href="#">Skills</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#">Projects</a></li>
                         
                     </nav>
@@ -32,7 +32,7 @@
                 <nav class="navLinks">
                     <ul>
                         <li><a href="#">Skills</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="#about">About</a></li>
                         <li><a href="#">Projects</a></li>
                         <li>
                             <a href="#connect">Connect with me</a>
@@ -67,7 +67,7 @@
         </div>
     </section>
     <br>
-    <section class="about">
+    <section class="about" id="about">
         <div class="aboutGrid">
             <table>
                 <tr>
@@ -125,28 +125,46 @@
             </table>
         </div>
     </section>
-    <div>
-        <h2>Projects</h2>
-    </div>
     <br>
-    <section>
+    <!-- <section>
+        <div class="projects">
+            <div class="projectGrids">
+                <h2>Projects</h2>
+                <div class="projectBox">
+                    <img src="images/pnrRecog.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section> -->
         <fieldset class="connect">
             <legend><b>Get in Touch</b></legend>
             <form action="https://formspree.io/f/myyapkyy" method="POST">                
                 <div class="connectGrid" id="connect">
-                    <i></i>
-                    <i>
-                        <input type="text" name="FirstName" placeholder="First name" required>
-                        <input type="text" name="LastName" placeholder="Last name" required>
-                    </i>
-                    <i>
-                        <input type="email" name="EmailAddress" placeholder="Email Address" required>
-                        <input type="tel" name="PhoneNo" placeholder="Phone No." required>
-                    </i>
-                    <i>
-                        <textarea class="connectGrid--message" id="Message" name="Message" rows="4" cols="50" placeholder=" Message"></textarea>
-                    </i>
-                    <i><button type="submit">Send</button></i>
+                    
+                    <div class="contact1">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="FirstName" placeholder="First name" required>
+                        
+                    </div>
+                    <div class="contact2">
+                        <label for="lastname">Last Name</label>
+                      <input type="text" id="lastname" name="LastName" placeholder="Last name" required>
+                    </div>
+                    <div class="contact3">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="EmailAddress" placeholder="Email Address" required>
+                    </div>
+                    <div class="contact4">
+                        <label for="tel">Phone Number</label>
+                        <input type="tel" id="tel"name="PhoneNo" placeholder="Phone No." required>
+                    </div>
+                    <div class="contact5">
+                        <label for="message">Message</label>
+                        <textarea class="connectGrid message" id="message" name="Message" rows="4" cols="50" placeholder=" Message"></textarea>
+                    </div>
+                    <div class="contact6"><button type="submit">Send</button></div>
                 </div>
             </form>
         </fieldset>

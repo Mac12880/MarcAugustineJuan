@@ -247,6 +247,30 @@ body{
 .certs p{
     text-align: center;
 }
+/* Projects */
+.projects{
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    max-width: 1000px;
+    padding: 20px 20px 20px 20px;
+    
+}
+.projectsGrid{
+   
+    margin-left: auto;
+    margin-right: auto;
+}
+.projectBox{
+    background-color: white;
+    max-width: 300px;
+    max-height: 200px;
+}
+.projectBox img{
+    max-width: 300px;
+    max-height: 200px;
+}
 /* Get in Touch */
 .connect{
     border-radius: 25px 50px;
@@ -259,17 +283,36 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+.contact1{ grid-area: fname; text-align: center;}
+.contact2{ grid-area: lname; text-align: center;}
+.contact3{ grid-area: email; text-align: center;}
+.contact4{ grid-area: contactnum; text-align: center;}
+.contact5{ grid-area: message; text-align: center;}
+.contact6{ grid-area: submit; text-align: center;}
+.connect1 div{
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+
 .connectGrid{
+    place-items: center;
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(autofit, minmax(min(22rem, 100%)));
-    place-items: center;
-    /* grid-template-columns: 5px auto 5px;
-    grid-template-rows: 50px 50px auto;
-    place-items: center;
-    padding: 0px 0px;
-    column-gap: 0px;
-    row-gap: 0px; */
+    color: white;
+    border-radius: 15px;
+    grid-template-areas: 
+    'fname lname'
+    'email contactnum'
+    'message message'
+    'submit submit';
+    padding: 1rem 1rem 1rem 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 30rem;
+}
+.connectGrid label{
+    padding-left: 10px;
 }
 .connect b{
     color: white;
@@ -278,19 +321,21 @@ body{
 .connect input{
     border-color: lightgrey;
     border-style: solid;
-    border-radius: 15px;
-    padding: 10px 10px;
-    margin: 10px 10px;
+    border-radius: 5px;
+     padding: 5px 5px;
     width: auto;
     
 }
-.connectGrid--message{
-    width: 370px;
+.connectGrid .message{
+    width: auto;
     border-color: lightgrey;
     border-style: solid;
     border-radius: 5px;
     border-width: initial;
     margin-bottom: 5px;
+}
+.connectGrid textarea{
+    color: black;
 }
 .connectGrid button{
     font-size: 17px;
@@ -350,7 +395,8 @@ body{
     width: clamp(200px, 50%, 600px)
 } */
 /* screen and  */
-@media (max-width: 745px){
+/* @media (max-width: 745px){ */
+@media (max-width: 665px){
     .navBar .navLinks, .navBar .cta {
         display: none;
     }
@@ -363,10 +409,58 @@ body{
 }
 
 
-@media (max-width: 500px){
+@media (max-width: 664px){
     .introGrid{
         grid-template-areas: 
         'left left'
         'right right';
+    }
+    .connect{
+        border-radius: 25px 50px;
+        border-style: solid;
+        background: rgb(107,101,214);
+        background: linear-gradient(90deg, rgba(107,101,214,1) 0%, rgba(90,37,244,1) 50%, rgba(159,0,255,1) 100%);
+        border-color: white;
+        width: 100%;
+        font-family: Verdana,Geneva,sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .connectGrid{
+        /* display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(autofit, minmax(min(22rem, 100%))); */
+        row-gap: 0px;
+        display: grid;
+        gap: 5px;
+        color: white;
+        border-radius: 15px;
+        /* grid-template-columns: 60% 40%; */
+        /* grid-template-rows: auto; */
+        /* place-items: center; */
+        grid-template-areas: 
+        'fname'
+        'fname'
+        'lname'
+        'lname'
+        'email'
+        'email'
+        'contactnum'
+        'contactnum'
+        'message'
+        'message'
+        'submit';
+    }
+    .connectGrid label{
+        display: none;
+    }
+    .connectGrid input{
+        width: 70%;
+    }
+    .connectGrid .message{
+        width: 70%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
