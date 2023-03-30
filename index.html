@@ -7,7 +7,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-</head>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+</head> 
 
 <body>
     <nav class="navbar">
@@ -18,7 +23,7 @@
                 <ul>
                     <!-- <li><a href="#">Skills</a></li> -->
                     <li><a href="#about">About</a></li>
-                    <!-- <li><a href="#">Projects</a></li> -->
+                    <li><a href="#projects">Projects</a></li>
                         
                     </nav>
                     <a class="cta" href="#connect"><button>Contact</button></a>
@@ -33,7 +38,7 @@
                     <ul>
                         <!-- <li><a href="#skills">Skills</a></li> -->
                         <li><a href="#about">About</a></li>
-                        <!-- <li><a href="#">Projects</a></li> -->
+                        <li><a href="#projects">Projects</a></li>
                         <li>
                             <a href="#connect">Connect with me</a>
                         </li>
@@ -142,43 +147,41 @@
     <br> -->
 
     <section class="projects" id="projects">
-            <div class="max-width">
-                <h2 class="title">My Projects</h2>
-                <div class="carousel">
+            <div class="maxWidth">
+                <h1 class="title">My Projects</h1>
+                <div class="carousel owl-carousel">
 
                     <div class="card">
                         <div class="box">
-                            <img src="" alt="">
-                            <div class="text">Proj Name</div>
-                            <p>lorem ipsum</p>
+                            <img src="./images/toDoList2.png" alt="">
+                            <div class="text">To Do List</div>
+                            <p>A to do list webpage using <b class="highlight">HTML</b>, <b class="highlight">CSS</b>, and <b class="highlight">JavaScript</b>. A project for BayanAcademy and J.P. Morgan's JavaScript Programming Bootcamp.</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="box">
-                            <img src="" alt="">
-                            <div class="text">Proj Name</div>
-                            <p>lorem ipsum</p>
+                            <img src="./images/pnrRecog.png" alt="License Plate Recognition Picture">
+                            <div class="text">License Plate Recognition</div>
+                            <p>Philippine License Plate Recognition System using <b class="highlight">Artificial Intelligence (Convolutional Neural Network)</b> with <b class="highlight">Computer Vision</b> and <b class="highlight">OCR</b> in Python.</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="box">
-                            <img src="" alt="">
-                            <div class="text">Proj Name</div>
-                            <p>lorem ipsum</p>
+                            <img src="./images/MobvacVaccineApp1.png" alt="MOBVAC Picture">
+                            <div class="text">MOBVAC</div>
+                            <p>Health pass during lockdown(Covid 19) and a vaccine records to be able to go to public or private establishments. Developed using <b class="highlight">HTML</b>, <b class="highlight">CSS</b>, and <b class="highlight">PHP</b>.</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="box">
-                            <img src="" alt="">
-                            <div class="text">Proj Name</div>
-                            <p>lorem ipsum</p>
+                            <img src="./images/stethnotes3.png" alt="Stethnotes Picture">
+                            <div class="text">Stethnotes</div>
+                            <p>I designed the UI of the prototype, an application for medical workers to see and input information of the patient or employee. Only designed in <b class="highlight">Canva</b>.</p>
                         </div>
                     </div>
                 </div>
             </div>
     </section>
-
-    <br>
     <section>
         <fieldset class="connect">
             <legend><b>Get in Touch</b></legend>

@@ -133,7 +133,7 @@ body{
     font-family: Verdana,Geneva,sans-serif;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 30px;
+    padding-top: 81px;
     padding-bottom: 50px;
     height: auto;
     
@@ -233,7 +233,7 @@ body{
 /* About & Certifications*/
 .about{
     background-color: black;
-    border-color: white;
+    /* border-color: white; */
     border-style: solid;
     border-radius: 5px; 
     max-width: 350px;
@@ -278,33 +278,89 @@ body{
     text-align: center;
 }
 /* Projects */
+.projects .title{
+    text-align: center;
+}
+.projects .maxWidth{
+    margin-top: 150px;
+    background-color: #141414;
+    border: none;
+}
+
+.highlight{
+    color: rgba(159,0,255,1);
+}
 .projects{
     color: white;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: black;
-    max-width: 1000px;
-    padding: 20px 20px 20px 20px;
-    
+    background: #111;
 }
-.projectsGrid{
-   
-    margin-left: auto;
-    margin-right: auto;
+/* .projects.title::before{
+    background: white;
 }
-.projectBox{
-    background-color: white;
-    max-width: 300px;
-    max-height: 200px;
+.projects.title::after{
+    background: #111;
+} */
+.projects .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
 }
-.projectBox img{
-    max-width: 300px;
-    max-height: 200px;
+.projects.carousel.card:hover{
+    background-color: rgb(107,101,214);
+}
+.projects .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.projects .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.projects .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px;
+}
+.projects .carousel .card img{
+    height: 150px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 5px solid white;
+    border-width: thin;
+}
+.projects .carousel .card:hover img{
+    border-color: white;
+}
+.projects .carousel .card p{
+    text-align: justify;
+}
+.owl-dots{
+    text-align: center;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none! important;
+    border-radius: 50%;
+    border: 2px solid rgba(159,0,255,1)! important;
+    transition: all 0.3 ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot:hover{
+    background: rgba(159,0,255,1)! important;
 }
 /* Get in Touch */
 .connect{
-    border-radius: 25px 50px;
+    border-radius: 25px;
     border-style: solid;
+    margin-top: 150px;
     background: rgb(107,101,214);
     background: linear-gradient(90deg, rgba(107,101,214,1) 0%, rgba(90,37,244,1) 50%, rgba(159,0,255,1) 100%);
     border-color: white;
