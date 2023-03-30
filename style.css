@@ -1,10 +1,30 @@
 body{
+    background-image:url(/images/violetbackground.png);
+    background-repeat: no-repeat;
+    background-size: 100% 31%;
     background-color: #141414;
+}
+.backgroundFirst img{
+    /* max-width: 100%;
+    max-height: 100%; */
+    position: absolute;
+    width: 110%;
+    z-index: -1;
+    /* left: 0px;
+    top: 25%; */
 }
 .paddingLeft{
     padding-left: 25px;
 }
 /* Navigation */
+.nB div{
+    top: 0;
+    left: 0;
+    background-color: black;
+    padding-left: 5px;
+    padding-right: 15px;
+    border-radius: 15px 15px 0px 0px;
+}
 .navBar{
     width: 100%;
     height: 60px;
@@ -28,7 +48,8 @@ body{
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
-    padding-right: 25px;
+    background-color: none;
+    padding-right: 5px;
 }
 .logo{
     box-sizing: border-box;
@@ -101,11 +122,15 @@ body{
 }
 /* Intro */
 .intro{
-    border-radius: 25px 50px;
+    /* background-image:url(/images/violetbackground.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; */
     position: static;
     font-family: Verdana,Geneva,sans-serif;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
     height: auto;
     
 }
@@ -117,7 +142,7 @@ body{
     gap: 1rem;
     color: white;
     border-radius: 15px;
-    /* background-color: black; */
+    background-color: black;
     /* border-color: white; */
     /* border-style: 10px; */
     /* margin-left: auto; */
@@ -208,6 +233,7 @@ body{
     border-style: solid;
     border-radius: 5px; 
     max-width: 350px;
+    margin-top: 110px;
     margin-left: auto;
     margin-right: auto;
     font-family: Verdana,Geneva,sans-serif;
@@ -361,14 +387,13 @@ body{
 .dropdownnavBar{
     display: none;
     position: absolute;
-    right: 2rem;
-    width: 80%;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(50px);
-    border-radius: 10px;
+    width: 90%;
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(100px);
+    border-radius: 0px 0px 10px 10px;
     overflow: hidden;
     transform: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    
+    margin-left: 3%;
 }
 .dropdownnavBar ul{
     margin: 0 0;
@@ -427,17 +452,11 @@ body{
         margin-right: auto;
     }
     .connectGrid{
-        /* display: grid;
-        gap: 1rem;
-        grid-template-columns: repeat(autofit, minmax(min(22rem, 100%))); */
         row-gap: 0px;
         display: grid;
         gap: 5px;
         color: white;
         border-radius: 15px;
-        /* grid-template-columns: 60% 40%; */
-        /* grid-template-rows: auto; */
-        /* place-items: center; */
         grid-template-areas: 
         'fname'
         'fname'
