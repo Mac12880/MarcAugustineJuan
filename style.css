@@ -1,7 +1,7 @@
 body{
     background-image:url("./images/violetbackground.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 25%;
     background-color: #141414;
 }
 .backgroundFirst img{
