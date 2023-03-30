@@ -1,7 +1,7 @@
 body{
-    background-image:url(/images/violetbackground.png);
+    background-image:url("./images/violetbackground.png");
     background-repeat: no-repeat;
-    background-size: 100% 31%;
+    background-size: 100%;
     background-color: #141414;
 }
 .backgroundFirst img{
@@ -23,14 +23,18 @@ body{
     background-color: black;
     padding-left: 5px;
     padding-right: 15px;
-    border-radius: 15px 15px 0px 0px;
+    /* border-radius: 15px 15px 0px 0px; */
+    border-radius: 15px 15px 15px 15px;
 }
 .navBar{
+    display: inline-block;
+    justify-content: center;
     width: 100%;
     height: 60px;
     max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
     justify-content: space-between;
 }
@@ -388,7 +392,7 @@ body{
     display: none;
     position: absolute;
     width: 90%;
-    background: rgba(0, 0, 0, 0);
+    background: #383838;
     backdrop-filter: blur(100px);
     border-radius: 0px 0px 10px 10px;
     overflow: hidden;
@@ -426,7 +430,7 @@ body{
         display: none;
     }
     .navBar .toggle_btn{
-        display: block;
+        display: inline-block;
     }
     .dropdownnavBar{
         display: block;
@@ -435,6 +439,9 @@ body{
 
 
 @media (max-width: 664px){
+    .nB div{
+        border-radius: 15px 15px 0px 0px;
+    }
     .introGrid{
         grid-template-areas: 
         'left left'
