@@ -3,6 +3,9 @@ body{
     background-repeat: no-repeat;
     background-size: 100% 25%;
     background-color: #141414;
+
+    height: 25%;
+    width: 100vw;
 }
 .backgroundFirst img{
     /* max-width: 100%;
@@ -398,7 +401,9 @@ body{
     max-width: 30rem;
 }
 .connectGrid label{
-    padding-left: 10px;
+    /* padding-left: 10px; */
+    margin-left: auto;
+    margin-right: auto;
 }
 .connect b{
     color: white;
