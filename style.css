@@ -111,7 +111,11 @@ body{
     transition: all 0.3 ease 0s;
 }
 .cta button:hover{
+    font-weight: bold;
     background-color: black;
+    color: rgba(159,0,255,1);
+    border-style: solid;
+    border-width: thin;
 }
 /* Intro */
 .intro{
