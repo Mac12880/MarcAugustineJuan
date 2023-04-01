@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+html, body{ 
+    margin: 0; 
+    } 
 body{
     background-image:url("./images/violetbackground.png");
     background-repeat: no-repeat;
@@ -452,6 +458,22 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+/* Footer */
+footer{
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 0;
+}
+footer p{
+    font-size: 3vh;
+    color: white;
+    background: rgb(107,101,214);
+    background: linear-gradient(90deg, rgba(107,101,214,1) 0%, rgba(90,37,244,1) 50%, rgba(159,0,255,1) 100%);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
 }
 
 /* RESPONSIVE */
