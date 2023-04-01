@@ -27,6 +27,7 @@ body{
     border-radius: 15px 15px 15px 15px;
 }
 .navBar{
+    left: 0px;
     display: inline-block;
     justify-content: center;
     width: 100%;
