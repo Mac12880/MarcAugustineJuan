@@ -2,7 +2,17 @@
 const toggleBtn = document.querySelector(".toggle_btn");
 const toggleBtnIcon = document.querySelector(".toggle_btn i");
 const dropDownMenu = document.querySelector("#dropdownnavBar");
+const xButton = document.querySelector(".xButton");
 
+// Dropdown Nav X Button
+xButton.onclick = function(){
+    dropDownMenu.classList.remove("open");
+    dropDownMenu.style.display = "none";
+    toggleBtnIcon.classList.replace("fa-xmark", "fa-bars");
+    
+}
+
+// NavBarIcon
 toggleBtn.onclick = function () {
     if (dropDownMenu.style.display === "none") {
         toggleBtnIcon.classList.replace("fa-bars", "fa-xmark");
@@ -10,9 +20,12 @@ toggleBtn.onclick = function () {
         dropDownMenu.style.display = "block";
     } else {
         toggleBtnIcon.classList.replace("fa-xmark", "fa-bars");
+        dropDownMenu.classList.remove("open");
         dropDownMenu.style.display = "none";
     }
 }
+
+
 
 // owl carousel script
 $('.carousel').owlCarousel({
